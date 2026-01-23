@@ -1,0 +1,71 @@
+import java.util.Scanner;
+
+public class Apv {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter diagonal 1  value of rhombus: ");
+        float diagonal1 = sc.nextFloat();
+        System.out.println("Enter diagonal 2 value of rhombus: ");
+        float diagonal2 = sc.nextFloat();
+        System.out.println("Enter side value of equilateral triangle: ");
+        float side = sc.nextFloat();
+        System.out.println("Enter radius of circle: ");
+        float radius = sc.nextFloat();
+        System.out.println("Enter base value of parallelogram: ");
+        float base = sc.nextFloat();
+        System.out.println("Enter side value of parellelogram: ");
+        float sideOfParallelogram = sc.nextFloat();
+        System.out.println("Enter length of rectangle: ");
+        float length = sc.nextFloat();
+        System.out.println("Enter width of rectangle: ");
+        float width = sc.nextFloat();
+        System.out.println("Enter side value of square: ");
+        float sideOfSquare = sc.nextFloat();
+        System.out.println("Enter radius of cone: ");
+        float radiusOfCone = sc.nextFloat();
+        System.out.println("Enter height of cone: ");
+        float heightOfCone = sc.nextFloat();
+        System.out.println("Enter base area of prism: ");
+        float baseAreaOfPrism = sc.nextFloat();
+        System.out.println("Enter height of prism: ");
+        float heightOfPrism = sc.nextFloat();
+        System.out.println("Enter radius of cylinder: ");
+        float radisuOfCylinder = sc.nextFloat();
+        System.out.println("Enter height of cylinder: ");
+        float heightOfCylinder = sc.nextFloat();
+        System.out.println("Enter radius of sphere: ");
+        float radiusOfSphere = sc.nextFloat();
+        System.out.println("Enter base length of pyramid: ");
+        float baseOfPyramid = sc.nextFloat();
+        System.out.println("Enter base width of pyramid: ");
+        float baseWidthPyramid = sc.nextFloat();
+        System.out.println("Enter height of pyramid: ");
+        float heightOfPyramid = sc.nextFloat();
+        float pi = 3.14f;
+        double area = (diagonal1 * diagonal2) / 2;
+        double areaOfEquiTri = 0.4325 * (side * side);
+        double periOfCircle = 2 * pi * radius;
+        double periOfEquiTri = 3 * side;
+        double periOfParallelogram = 2 * (base + sideOfParallelogram);
+        double periOfRectangle = 2* (length + width);
+        double periOfSquare = 4 * sideOfSquare;
+        double volumeOfCone = pi * (radiusOfCone * radiusOfCone) * (heightOfCone / 3);
+        double volumeOfPrism = baseAreaOfPrism * volumeOfCone;
+        double volumeOfCylinder = pi * (radisuOfCylinder * radisuOfCylinder) * heightOfCylinder;
+        double voulmeOfSphere = 1.33 * pi * (radiusOfSphere*radiusOfSphere*radiusOfSphere);
+        double voulemOfPyramid = (baseOfPyramid * baseWidthPyramid * heightOfPyramid) / 3;
+        System.out.println("Area of Rhombus is: " + area);
+        System.out.println("Area of equilateral Triangle: " + areaOfEquiTri);
+        System.out.println("Perimeter of circle is: " + periOfCircle);
+        System.out.println("Perimeter of eqilateral triangle: " + periOfEquiTri);
+        System.out.println("Perimeter of parallelogram: " + periOfParallelogram);
+        System.out.println("Perimenter of rectangle: " + periOfRectangle);
+        System.out.println("Perimeter of square: "+periOfSquare);
+        System.out.println("Volume of cone: " + volumeOfCone);
+        System.out.println("Voulme of Prism: " + volumeOfPrism);
+        System.out.println("Voulme of cylinder: " + volumeOfCylinder);
+        System.out.println("Voulme of sphere: " + voulmeOfSphere);
+        System.out.println("Voume of pyramid: " + voulemOfPyramid);
+
+    }
+}
